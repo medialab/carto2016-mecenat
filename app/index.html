@@ -893,7 +893,8 @@
         </div>
       </section>
 
-      <section class="mcn-about">
+      <section class="mcn-about row">
+        <div class="img"></div>
         <div class="credits">
           <h1>Une enquête réalisée par</h1>
           <ul>
@@ -904,12 +905,12 @@
             <li>Juliette Reinhart</li>
             <li>Adeline Simon</li>
           </ul>
-          <a href="#" class="reset">Retour au début</a>
-          <div class="cartouche">
-            <div>Cartographie des controverses</div>
-            <div>Sciences Po Paris</div>
-            <div>2016</div>
-          </div>
+        </div>
+        <a href="#" class="reset">Retour au début</a>
+        <div class="cartouche">
+          <div>Cartographie des controverses</div>
+          <div>Sciences Po Paris</div>
+          <div>2016</div>
         </div>
       </section>
 
@@ -1032,6 +1033,12 @@
           $card.find('.close').on('click', function () {
             hideCard($card);
           });
+        });
+
+        // Credits.
+        $('.reset').on('click', function (e) {
+          e.preventDefault();
+          $(window).scrollTo(0, 500);
         });
       });
     </script>

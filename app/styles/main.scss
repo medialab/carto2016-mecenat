@@ -227,6 +227,7 @@ html, body {
   width: 100vw;
   height: 100vh;
   background: white;
+  overflow: hidden;
 
   ul, li {
     margin-left: 0;
@@ -294,5 +295,70 @@ html, body {
 
   .passive-list {
     padding-top: 10px;
+  }
+}
+
+.mcn-about {
+  height: 100vh;
+  background: white;
+  position: relative;
+
+  .img {
+    background: #CCCCCC;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+  }
+
+  .reset {
+    position: absolute;
+    display: block;
+    background: rgba(255,255,255,0.8);
+    width: 100px;
+    height: 100px;
+    text-indent: -1000rem;
+    top: 100vh;
+    margin-top: -130px;
+    margin-left: 30px;
+  }
+
+  .cartouche {
+    position: absolute;
+    font-weight: lighter;
+    font-size: 12px;
+    padding: 10px;
+    border: 1px blue solid;
+    color: blue;
+    top: 100vh;
+    margin-top: -100px;
+    right: 20px;
+  }
+
+  .credits {
+    position: absolute;
+    height: 278px;
+    width: 100vw;
+    z-index: 10;
+    margin-top: calc(50vh - 139px);
+  }
+
+  h1, li {
+    text-align: center;
+    font-size: 24px;
+    font-weight: lighter;
+    color: blue;
+  }
+
+  h1 {
+    margin-bottom: 2em;
+  }
+
+  ul, li {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
   }
 }
