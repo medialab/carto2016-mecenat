@@ -2,7 +2,8 @@
   "name": "mecenat",
   "private": true,
   "dependencies": {
-    "bootstrap-sass": "~3.3.1"
+    "bootstrap-sass": "~3.3.1",
+    "okvideo": "~2.3.3"
   },
   "devDependencies": {
     "chai": "~3.5.0",
