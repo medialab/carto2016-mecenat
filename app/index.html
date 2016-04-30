@@ -697,18 +697,30 @@
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="/bower_components/okvideo/src/okvideo.min.js"></script>
+    <script src="/node_modules/jquery.scrollto/jquery.scrollTo.min.js"></script>
+    <script src="/node_modules/jquery.easing/jquery.easing.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <script type="text/javascript">
       $(function () {
-        var isOpen = false;
+        // Start button.
+        var $start = $('.start');
+        $start.on('click', function (e) {
+          e.preventDefault();
+          $(window).scrollTo('.mcn-themes', 1000, {easing: 'easeOutSine'});
+        });
+
+        // Foldable themes section.
+        var isOpen = false,
+            $themes = $('.mcn-themes');
+
         $('.mcn-theme-foldable .text').on('click', function () {
-          $('.mcn-themes').toggleClass('is-open');
+          $themes.toggleClass('is-open');
           isOpen = !isOpen;
-          $('.mcn-themes').scrollLeft(0);
+          $themes.scrollLeft(0);
           if (isOpen) {
-            $('.mcn-themes').scrollLeft($(this).parent().offset().left);
+            $themes.scrollLeft($(this).parent().offset().left);
           }
         });
       });
