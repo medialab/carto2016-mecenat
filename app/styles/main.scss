@@ -58,6 +58,8 @@ html, body {
 }
 
 .interactive {
+  opacity: 0;
+
   cursor: pointer;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -185,9 +187,11 @@ html, body {
         width: 0;
         opacity: 0;
         float: left;
-        background: #EFE8E8;
+        background: white;
         height: 100vh;
         pointer-events: none;
+        transition: 0.5s all ease-out;
+        transition-property: opacity;
       }
     }
 
@@ -209,8 +213,58 @@ html, body {
           width: 1250px;
           opacity: 1;
           pointer-events: auto;
+
+          .interactive {
+            opacity: 1;
+          }
         }
       }
     }
+  }
+}
+
+.mcn-stakeholders {
+  width: 100vw;
+  height: 100vh;
+  background: white;
+
+  ul, li {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .card {
+    display: none;
+  }
+
+  .list {
+    padding-left: 2em;
+
+    h2 {
+      font-size: 22px;
+      font-weight: lighter;
+      margin-bottom: 4em;
+    }
+
+    ul {
+      top: 6%;
+    }
+
+    ul li a {
+      font-size: 24px;
+      font-weight: lighter;
+      color: blue;
+
+      &:hover {
+        text-decoration: none;
+        color: blue;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .passive-list {
+    padding-top: 10px;
   }
 }

@@ -445,10 +445,10 @@
         </div>
       </section>
 
-      <section class="mcn-stakeholders">
+      <section class="mcn-stakeholders row">
         <div class="list">
           <h2>Avec</h2>
-          <ul>
+          <ul class="col-sm-4 col-md-4 col-lg-4">
             <li><a href="#" class="stakeholder stakeholder-0">Jean-Jacques Aillagon</a></li>
             <li><a href="#" class="stakeholder stakeholder-1">Pierre Alféri</a></li>
             <li><a href="#" class="stakeholder stakeholder-2">Thierry Briault</a></li>
@@ -466,7 +466,7 @@
         </div>
         <div class="display">
           <div class="passive-list">
-            <ul>
+            <ul class="col-sm-3 col-md-3 col-lg-3">
               <li>ADMICAL</li>
               <li>Ahae</li>
               <li>Jean de Loisy</li>
@@ -487,7 +487,7 @@
               <li>Hermès</li>
               <li>LVMH</li>
             </ul>
-            <ul>
+            <ul class="col-sm-3 col-md-3 col-lg-3">
               <li>Louis Vuitton</li>
               <li>Bulgari</li>
               <li>Louis Roederer</li>
@@ -859,7 +859,7 @@
           isOpen = !isOpen;
           $themes.scrollLeft(0);
           if (isOpen) {
-            $themes.scrollLeft($(this).parent().offset().left);
+            $themes.scrollLeft($(e.target).parent().parent().offset().left);
           }
         });
 
