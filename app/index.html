@@ -123,10 +123,10 @@
               </p>
             </div>
             <div class="hang hang-0">
-              Affichage ici
               <div class="interactive video"
                    data-video-src="https://vimeo.com/22441978"
-                   data-video-poster="https://i.vimeocdn.com/video/145051269.webp?mw=1920&mh=1080&q=70">
+                   data-video-poster="https://i.vimeocdn.com/video/145051269.webp?mw=1920&mh=1080&q=70"
+                   style="width:400px;height:250px;display:block;background:#AAA;margin-top:30px;margin-left:30px">
               </div>
             </div>
           </section>
@@ -722,6 +722,18 @@
           if (isOpen) {
             $themes.scrollLeft($(this).parent().offset().left);
           }
+        });
+
+        // Hanged videos.
+        $('.interactive.video').each(function(i, vid) {
+          var $vid = $(vid),
+              poster = $vid.attr('data-video-poster');
+
+          $vid.css({
+            'background-image': 'url(' + poster + ')',
+            'background-repeat': 'no-repeat',
+            'background-position': 'center'
+          })
         });
       });
     </script>

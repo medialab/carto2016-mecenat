@@ -17,6 +17,35 @@ html, body {
   background: red;
 }
 
+.interactive {
+  cursor: pointer;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-box-shadow:inset 0px 0px 0px 10px #f00;
+  -moz-box-shadow:inset 0px 0px 0px 10px #f00;
+  box-shadow: inset 0px 0px 0px 3px blue;
+  -webkit-transition: box-shadow 0.3s ease-out;
+  -o-transition: box-shadow 0.3s ease-out;
+  -moz-transition: box-shadow 0.3s ease-out;
+  -ms-transition: box-shadow 0.3s ease-out;
+  -kthtml-transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out;
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 4px 2px #D50E0E;
+    -moz-box-shadow: 0px 0px 4px 2px #D50E0E;
+    box-shadow: 0px 0px 4px 2px #D50E0E;
+    -webkit-transition: box-shadow 0.3s ease-out;
+    -o-transition: box-shadow 0.3s ease-out;
+    -moz-transition: box-shadow 0.3s ease-out;
+    -ms-transition: box-shadow 0.3s ease-out;
+    -kthtml-transition: box-shadow 0.3s ease-out;
+    transition: box-shadow 0.3s ease-out;
+    box-shadow: inset 0px 0px 0px 20px blue;
+  }
+}
+
 .mcn-intro {
   background: grey;
   height: 100vh;
