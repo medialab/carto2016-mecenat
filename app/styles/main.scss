@@ -236,6 +236,34 @@ html, body {
 
   .card {
     display: none;
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+    background: white;
+    width: 800px;
+    left: 390px;
+    margin-top: -120px;
+    border: 1px solid blue;
+    height: 90vh;
+    color: blue;
+    padding: 0 3em;
+    transition: opacity 250ms;
+
+    .text {
+      height: 65%;
+      overflow-y: scroll;
+    }
+
+    .close {
+      margin-top: 0px;
+      margin-right: -30px;
+    }
+
+    h1 {
+      margin-top: 110px;
+      font-size: 26px;
+      font-weight: lighter;
+    }
   }
 
   .list {
@@ -256,7 +284,7 @@ html, body {
       font-weight: lighter;
       color: blue;
 
-      &:hover {
+      &:hover, &.is-selected {
         text-decoration: none;
         color: blue;
         font-weight: normal;
