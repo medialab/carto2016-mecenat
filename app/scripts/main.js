@@ -1,1 +1,7 @@
-console.log('\'Allo \'Allo!');
+$(() => {
+
+  // Intro video.
+  (() => {
+    const $target = $('.mcn-intro .video');
+  }())
+});
