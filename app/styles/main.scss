@@ -127,19 +127,20 @@ body {
     height: 320px;
     padding-left: 5px;
     padding-top: 50vh;
-    margin-top: -160px;
+    margin-top: -100px;
 
     h1 {
       font-weight: 300;
       text-transform: uppercase;
-      font-size: 70px;
+      font-size: 45px;
       line-height: 60px;
     }
 
     h2 {
-      font-weight: 300;
-      color: blue;
-      font-size: 45px;
+      font-weight: 500;
+      font-style: italic;
+
+      font-size: 35px;
     }
   }
 
@@ -170,10 +171,14 @@ body {
       height: 100vh;
       width: auto;
       float: left;
+      background-color: black;
 
       .text {
-        overflow-y: scroll;
-        width: 250px;
+        overflow-y: auto;
+        width: 300px;
+        padding-top: 2em;
+        padding-left: 20px;
+        padding-right: 20px;
         height: 100%;
         padding-bottom: 3em;
         color: #EFE8E8;
@@ -200,12 +205,33 @@ body {
 
     .mcn-theme-intro {
       width: auto;
+      background: url(../images/img-01.png) no-repeat bottom left;
 
       .text {
         h1 {
           margin-top: 140px;
         }
       }
+    }
+
+    .mcn-theme-0 {
+      background: url(../images/img-02.png) no-repeat bottom left;
+    }
+
+    .mcn-theme-1 {
+      background: url(../images/img-03.png) no-repeat bottom left;
+    }
+
+    .mcn-theme-2 {
+      background: url(../images/img-04.png) no-repeat bottom left;
+    }
+
+    .mcn-theme-3 {
+      background: url(../images/img-05.png) no-repeat bottom left;
+    }
+
+    .mcn-theme-4 {
+      background: url(../images/img-01.png) no-repeat bottom left;
     }
   }
 
