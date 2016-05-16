@@ -1,8 +1,6 @@
 $icon-font-path: '../fonts/';
 
-// bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-// endbower
+
 
 html, body {
   font-family: 'Lato', sans-serif;
@@ -214,7 +212,8 @@ body {
     .mcn-themes-row {
       .mcn-theme {
         .hang {
-          width: 1250px;
+          width: 3500px;
+          height:800px;
           opacity: 1;
           pointer-events: auto;
 
