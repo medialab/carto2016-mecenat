@@ -6,6 +6,11 @@ html, body {
   font-family: 'Lato', sans-serif;
 }
 
+a, a:visited, a:active, a:hover {
+  color: blue;
+  font-weight: bold;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -63,7 +68,7 @@ body {
   }
 }
 
-.interactive {
+.interactive:not(.off) {
   opacity: 0;
 
   cursor: pointer;
@@ -93,7 +98,15 @@ body {
     box-shadow: inset 0px 0px 0px 20px blue;
   }
 
+
+}
+
+.interactive {
   text-indent: -9999em;
+
+  .content {
+    display: none;
+  }
 }
 
 .mcn-intro {
