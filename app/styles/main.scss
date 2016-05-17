@@ -11,7 +11,7 @@ body {
 }
 
 .sources {
-  position: absolute;top: -110px;left: 290px;font-size: 30px;color: blue;"
+  position: absolute;top: -110px;left: 290px;font-size: 30px;color: blue;
 }
 
 .main {
@@ -93,9 +93,7 @@ body {
     box-shadow: inset 0px 0px 0px 20px blue;
   }
 
-  &.video {
-    text-indent: -9999em;
-  }
+  text-indent: -9999em;
 }
 
 .mcn-intro {
