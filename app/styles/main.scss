@@ -179,6 +179,10 @@ body {
   background: grey;
   overflow-x: scroll;
 
+  &.row {
+    overflow-y: hidden;
+  }
+
   .mcn-themes-row {
     width: 1000000px;
 
